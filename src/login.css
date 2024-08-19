@@ -1,0 +1,111 @@
+.login-container {
+    background-color: #1c1c1e; /* Dark background for the login form */
+    color: #fff; /* White text color */
+    padding: 200px; /* Padding around the form */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 50%; /* Max width of the login container */
+    margin: auto; /* Center the container horizontally */
+    flex: 1;
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+  }
+  body{
+    background-color: #000;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center; /* Center the card horizontally */
+  }
+  
+  .login-container h2 {
+    font-size: 2.5em; /* Large heading size */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  .login-container p {
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  .social-signin {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding inside the button */
+    margin-bottom: 10px; /* Space below the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1em; /* Standard font size */
+    display: flex;
+    align-items: center; /* Center the icon and text vertically */
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .social-signin.google {
+    background-color: #050505; /* Google red background color */
+     color: #fff; /*White text color */
+  }
+  
+  .social-signin.apple {
+    background-color: #000; /* Black background color for Apple */
+    color: #fff; /* White text color */
+  }
+  
+  .social-signin .icon {
+    margin-right: 10px; /* Space between the icon and text */
+  }
+  
+  input[type="email"], input[type="password"] {
+    width: 100%; /* Full width of the input */
+    padding: 10px; /* Padding inside the input */
+    margin-bottom: 10px; /*Space below each input */
+    border-radius: 4px; /*Rounded corners */
+    border: 1px solid #100f0f; /*Light gray border */
+     color:white; /*Black text color inside the input */
+    background-color: black;
+  }
+  
+  .forgot-password {
+    display: block;
+    margin-bottom: 20px; /* Space below the forgot password link */
+    color: #007bff; /* Blue color for the link */
+    text-align: right; /* Align text to the right */
+  }
+  
+  .signin-button {
+    background-color: #4e44ff; /* Primary blue-violet background color */
+    color: #090909; /* White text color */
+    width: 100%; /* Full width of the button */
+    padding: 10px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1.25em; /* Standard font size */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .signin-button:hover {
+    background-color: #3e34cc; /* Darker blue-violet on hover */
+  }
+  
+  .register {
+    margin-top: 20px; /* Space above the register text */
+    font-size: 0.9em; /* Slightly smaller font size */
+    text-align: center; /* Center the text */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-between; /* Space between each icon */
+    margin-top: 20px; /* Space above the social icons */
+    font-size: 1.5em; /* Larger font size for icons */
+  }
+  
+  .social-icons i {
+    color: #888; /* Gray color for the icons */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .social-icons i:hover {
+    color: #fff; /* White color on hover */
+  }
+  

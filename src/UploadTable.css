@@ -1,0 +1,67 @@
+.uploads-table-container {
+    padding: 20px;
+    background-color: #111010; /* Dark background color */
+    color: #fff; /* Text color */
+  }
+  
+  .uploads-table {
+    width: 100%;
+    border-collapse: separate; /* Change from collapse to separate */
+    border-spacing: 0 10px; /* Adds space between rows */
+    background-color: #282828; /* Slightly lighter dark background */
+    color: white; /* Text color */
+  }
+  
+  .uploads-table th,
+  .uploads-table td {
+    padding: 12px;
+    background-color: #0c0c0c; /* Background for each cell */
+    text-align: left;
+  }
+  
+  .uploads-table th {
+    background-color: #0c0c0c; /* Darker background for header */
+  }
+  
+  .uploads-table td {
+    border-bottom: none; /* Removes the default border to avoid double lines */
+  }
+  
+  .uploads-table a {
+    color: #4e9ff5; /* Link color */
+    text-decoration: none;
+  }
+  
+  .uploads-table a:hover {
+    text-decoration: underline;
+  }
+  
+  select {
+    padding: 8px;
+    background-color: #0f0e0e;
+    color: #fff;
+    border: 1px solid #0b0b0b;
+  }
+  
+  .tag {
+    display: inline-block;
+    background-color: #4e9ff5;
+    color: #000;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 3px;
+  }
+  
+  .tag button {
+    background: none;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .tag button:hover {
+    color: #fff;
+  }
+  

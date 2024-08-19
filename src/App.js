@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Routes,Route} from "react-router-dom";
+import { createContext,useState} from "react";
+import Home from "./Home";
+import DashBoard from "./DashBoard";
+import UploadCSV from "./Upload";
+import LOadingPage from "./LoadingPage";
+import UploadFiles from "./UploadFiles";
+export const globalContext = createContext();
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+    const[globalIsLogin,setGlobalIsLogin]=useState(false);
+    const[Upload,setUpload]=useState(false);
+    const[Loading,setLoading]=useState(false);
+    return(
+        <globalContext.Provider value={{globalIsLogin,setGlobalIsLogin,Upload,setUpload,Loading,setLoading}}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/DashBoard" element={<DashBoard/>}/>
+                    <Route path="/Upload" element={<UploadCSV/>}/>
+                    <Route path="/LoadingPage" element={<LOadingPage/>}/>
+                    <Route path="/UploadFiles" element={<UploadFiles/>}/>
+
+                </Routes>
+            </BrowserRouter>
+        </globalContext.Provider>
+
+    );
 }
-
-export default App;
